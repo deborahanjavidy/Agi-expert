@@ -1,0 +1,48 @@
+.PH1 {
+    width: 1350px;
+    height: 500px;
+}
+
+.PH2 {
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+
+
+.Photo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 1px solid whitesmoke;
+    text-align: center;
+
+}
+
+.AJ {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.ART {
+    color: blue;
+    position: relative;
+    left: 80px;
+
+}
+
+
+.Liste {
+    position: relative;
+    left: 50px;
+    list-style: none;
+
+}
+
+.D {
+    position: relative;
+    top: 10px;
+}
