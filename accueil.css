@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex-wrap: nowrap;
+    background-color: rgb(37, 35, 35);
+}
+
+nav .premiernav,
+nav .deuxiemenav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Augmente l'espace entre les éléments */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    overflow: hidden;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+nav ul li img {
+    height: auto;
+    width: auto;
+    max-height: 2.5vw;
+}
+
+nav ul li p {
+    color: rgb(205, 201, 201);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 600;
+}
+
+.deuxiemenav {
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+}
+
+.liendenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Assure que les éléments restent sur la même ligne */
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto; /* Ajouté pour pousser vers la gauche */
+    white-space: nowrap; /* Empêche tout élément de se déplacer sur une nouvelle ligne */
+}
+
+.liendenav img {
+    height: 30%;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.liendenav a {
+    text-decoration: none;
+    color: rgb(135, 130, 130);
+    font-size: 16px;
+    transition: font-size 0.2s;
+}
+
+.liendenav i.fa-shopping-cart {
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+/* Style de la notification */
+.liendenav i.fa-shopping-cart::after {
+    content: "0";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: rgb(21, 21, 143);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Media Query pour écrans plus petits */
+@media (max-width: 768px) {
+    .liendenav {
+        gap: 10px; /* Réduit l'espace entre les éléments */
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+
+    .liendenav img {
+        height: 20%;
+        width: 15%;
+    }
+
+    .liendenav a {
+        font-size: 14px;
+    }
+
+    .liendenav i.fa-shopping-cart {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .liendenav {
+        gap: 0.5rem; /* Réduit encore l'espace entre les éléments */
+        font-size: 16px; /* Réduit encore la taille du texte */
+    }
+
+    .liendenav img {
+        height: 25%;
+        width: 20%;
+    }
+
+    .liendenav a {
+        font-size: 16px;
+    }
+
+    .liendenav i.fa-shopping-cart {
+        font-size: 16px;
+    }
+}
