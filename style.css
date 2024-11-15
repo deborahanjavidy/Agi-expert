@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    width: 45;
+    margin-right: 10px;
+    display:inline;
+}
+.text-with-arrow::before{
+    margin-right: 5px;
+    color:#ff450f;
+} 
+.text-bleu{
+    font-family: Arial,sans-serif;
+    color: blue;
+}
+.orange{
+    color: #ff450f;
+}
+p{
+    margin-left: 50px;
+}
